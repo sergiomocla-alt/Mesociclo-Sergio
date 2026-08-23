@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+<title>Mesociclo · Seguimiento 8 semanas</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIxIiB4Mj0iMCIgeTI9IjAiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMWY2YjNmIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzhmZTBiMCIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+CjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiByeD0iMjIiIGZpbGw9IiMxNTE3MWEiLz4KPHJlY3QgeD0iMjQiIHk9IjU4IiB3aWR0aD0iMTAiIGhlaWdodD0iMjQiIHJ4PSIyIiBmaWxsPSJ1cmwoI2cpIi8+CjxyZWN0IHg9IjQwIiB5PSI0NiIgd2lkdGg9IjEwIiBoZWlnaHQ9IjM2IiByeD0iMiIgZmlsbD0idXJsKCNnKSIvPgo8cmVjdCB4PSI1NiIgeT0iMzIiIHdpZHRoPSIxMCIgaGVpZ2h0PSI1MCIgcng9IjIiIGZpbGw9InVybCgjZykiLz4KPHJlY3QgeD0iNzIiIHk9IjIwIiB3aWR0aD0iMTAiIGhlaWdodD0iNjIiIHJ4PSIyIiBmaWxsPSJ1cmwoI2cpIi8+Cjwvc3ZnPg==">
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIxIiB4Mj0iMCIgeTI9IjAiPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMWY2YjNmIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzhmZTBiMCIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+CjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiByeD0iMjIiIGZpbGw9IiMxNTE3MWEiLz4KPHJlY3QgeD0iMjQiIHk9IjU4IiB3aWR0aD0iMTAiIGhlaWdodD0iMjQiIHJ4PSIyIiBmaWxsPSJ1cmwoI2cpIi8+CjxyZWN0IHg9IjQwIiB5PSI0NiIgd2lkdGg9IjEwIiBoZWlnaHQ9IjM2IiByeD0iMiIgZmlsbD0idXJsKCNnKSIvPgo8cmVjdCB4PSI1NiIgeT0iMzIiIHdpZHRoPSIxMCIgaGVpZ2h0PSI1MCIgcng9IjIiIGZpbGw9InVybCgjZykiLz4KPHJlY3QgeD0iNzIiIHk9IjIwIiB3aWR0aD0iMTAiIGhlaWdodD0iNjIiIHJ4PSIyIiBmaWxsPSJ1cmwoI2cpIi8+Cjwvc3ZnPg==">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Mesociclo">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#15171a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#15171a;
+    --bg-2:#0f1113;
+    --surface:#1d2025;
+    --surface-2:#262a30;
+    --line:#33373d;
+    --text:#f3f2ed;
+    --text-dim:#9aa0a7;
+    --text-faint:#666c73;
+    --accent:#3FAE6A;
+    --accent-on:#0b1710;
+    --radius-lg:18px;
+    --radius-md:12px;
+    --radius-sm:8px;
+    --shadow-card:0 1px 0 rgba(255,255,255,.03) inset, 0 8px 20px -12px rgba(0,0,0,.6);
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
+  html,body{margin:0;padding:0;height:100%;}
+  body{
+    background:var(--bg-2);
+    color:var(--text);
+    font-family:'Inter',system-ui,sans-serif;
+    display:flex; justify-content:center; min-height:100dvh;
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
+  }
+  .eyebrow{font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--text-faint);}
+  h1,h2,h3{font-family:'Oswald',sans-serif; margin:0; letter-spacing:.01em;}
+  .mono{font-family:'IBM Plex Mono',monospace;}
+
+  #frame{
+    width:100%; max-width:480px; min-height:100dvh; background:var(--bg);
+    display:flex; flex-direction:column; position:relative; box-shadow:0 0 60px rgba(0,0,0,.5);
+  }
+
+  #topbar{
+    position:sticky; top:0; z-index:20; background:var(--bg); padding:14px 18px 12px;
+    border-bottom:1px solid var(--line); overflow:hidden;
+  }
+  #topbar::before{
+    content:""; position:absolute; top:-70px; left:50%; transform:translateX(-50%);
+    width:300px; height:170px; border-radius:50%;
+    background:radial-gradient(circle, var(--accent) 0%, transparent 72%);
+    opacity:.2; filter:blur(6px); pointer-events:none; transition:background .35s; z-index:0;
+  }
+  #topbar .row{position:relative; z-index:1; display:flex; align-items:center; justify-content:space-between; gap:10px;}
+  .brand{display:flex; align-items:center; gap:9px; min-width:0;}
+  .brand-mark{
+    width:28px;height:28px;border-radius:8px; position:relative; flex:none;
+    background:radial-gradient(circle at 32% 26%, color-mix(in srgb, var(--accent) 55%, white) 0%, var(--accent) 48%, color-mix(in srgb, var(--accent) 65%, black) 100%);
+    box-shadow:0 2px 5px rgba(0,0,0,.5), inset 0 1px 2px rgba(255,255,255,.4), inset 0 -2px 3px rgba(0,0,0,.35);
+  }
+  .brand-text{font-family:'Oswald',sans-serif; font-weight:600; font-size:15.5px; letter-spacing:.02em; text-transform:uppercase; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .brand-sub{font-size:10.5px; color:var(--text-faint); font-family:'IBM Plex Mono',monospace; letter-spacing:.03em;}
+  .top-actions{display:flex; align-items:center; gap:8px; flex:none;}
+  .icon-btn{
+    width:32px;height:32px; border-radius:50%; border:1px solid var(--line); background:var(--surface-2);
+    color:var(--text-dim); display:flex; align-items:center; justify-content:center; cursor:pointer;
+  }
+  .icon-btn svg{width:15px;height:15px;}
+  .week-tag{
+    font-family:'IBM Plex Mono',monospace; font-size:11.5px; padding:6px 12px; border-radius:20px;
+    background:var(--surface-2); color:var(--accent); border:1px solid var(--line); white-space:nowrap;
+    cursor:pointer; font-weight:600;
+  }
+
+  #screen{flex:1; overflow-y:auto; padding:18px 18px 100px; -webkit-overflow-scrolling:touch;}
+  .screen-title{font-size:23px; font-weight:600; text-transform:uppercase; margin-bottom:3px; position:relative; display:inline-block;}
+  .screen-title::after{
+    content:""; position:absolute; left:1px; bottom:-6px; width:30px; height:4px; border-radius:3px;
+    background:linear-gradient(90deg, var(--accent), color-mix(in srgb, var(--accent) 40%, transparent));
+  }
+  .screen-lead{color:var(--text-dim); font-size:13px; line-height:1.5; margin:10px 0 20px;}
+
+  /* ---------- Day chips ---------- */
+  .day-scroll{display:flex; gap:8px; overflow-x:auto; padding-bottom:4px; margin-bottom:18px; scrollbar-width:none;}
+  .day-scroll::-webkit-scrollbar{display:none;}
+  .day-chip{
+    flex:none; padding:10px 14px; border-radius:14px; border:1px solid var(--line); background:var(--surface);
+    cursor:pointer; text-align:left; min-width:118px;
+  }
+  .day-chip .dow{font-size:10px; text-transform:uppercase; letter-spacing:.06em; color:var(--text-faint); font-family:'IBM Plex Mono',monospace;}
+  .day-chip .ses{font-size:13px; font-weight:600; margin-top:2px;}
+  .day-chip.active{background:color-mix(in srgb, var(--accent) 16%, var(--surface)); border-color:var(--accent);}
+  .day-chip.active .ses{color:var(--text);}
+  .day-chip.rest{opacity:.55;}
+
+  /* ---------- Exercise card ---------- */
+  .exwrap{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-lg);
+    margin-bottom:14px; overflow:hidden; box-shadow:var(--shadow-card);
+  }
+  .exwrap .exhead{padding:14px 16px 10px;}
+  .exname{font-size:15.5px; font-weight:600; line-height:1.3;}
+  .exsub{font-size:11.5px; color:var(--text-dim); margin-top:3px; line-height:1.4;}
+  .exlimit{
+    font-size:11px; color:#E0912F; margin-top:7px; padding:7px 10px; background:rgba(224,145,47,.1);
+    border-radius:8px; border:1px solid rgba(224,145,47,.25); line-height:1.4;
+  }
+  .extoggle{
+    font-size:11px; color:var(--accent); font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:4px;
+    margin-top:9px;
+  }
+  .exdetail{display:none; font-size:12px; color:var(--text-dim); line-height:1.55; padding:9px 0 2px; border-top:1px solid var(--line); margin-top:9px;}
+  .exdetail.open{display:block;}
+  .exdetail b{color:var(--text); font-weight:600;}
+
+  .setlog{padding:2px 16px 14px;}
+  .setrow{
+    display:flex; align-items:center; gap:8px; padding:9px 0; border-top:1px dashed var(--line);
+  }
+  .setrow:first-child{border-top:none;}
+  .setnum{
+    width:22px; height:22px; border-radius:50%; background:var(--surface-2); color:var(--text-dim);
+    font-family:'IBM Plex Mono',monospace; font-size:10.5px; display:flex; align-items:center; justify-content:center; flex:none;
+  }
+  .settarget{flex:1; min-width:0;}
+  .settarget .t1{font-size:12px; font-weight:600; color:var(--text);}
+  .settarget .t2{font-size:10.5px; color:var(--text-faint); font-family:'IBM Plex Mono',monospace; margin-top:1px;}
+  .settarget .t3{font-size:10.5px; color:#E0912F; font-family:'IBM Plex Mono',monospace; margin-top:3px; font-weight:600;}
+  .setinputs{display:flex; gap:6px; flex:none;}
+  .setinputs input{
+    width:48px; background:var(--bg); border:1px solid var(--line); border-radius:8px; padding:6px 4px;
+    color:var(--text); font-family:'IBM Plex Mono',monospace; font-size:12.5px; text-align:center;
+  }
+  .setinputs input:focus{outline:none; border-color:var(--accent);}
+  .setinputs input::placeholder{color:var(--text-faint);}
+
+  .rest-row{ display:flex; gap:8px; margin:2px 0 10px 30px; }
+  .rest-timer{
+    flex:1; padding:9px 10px; border-radius:10px; background:var(--bg);
+    border:1px solid var(--line); color:var(--text-dim); font-family:'IBM Plex Mono',monospace;
+    font-size:12px; text-align:center; cursor:pointer; transition:background .2s, color .2s, border-color .2s;
+  }
+  .rest-timer.running{ background:var(--accent); color:var(--accent-on); border-color:var(--accent); font-weight:600; cursor:default; }
+  .rest-timer.done{ background:#3FAE6A; color:#0b1710; font-weight:600; }
+  .rest-plus{
+    flex:none; padding:0 13px; border-radius:10px; border:1px solid var(--line); background:var(--surface-2);
+    color:var(--text-dim); font-family:'IBM Plex Mono',monospace; font-size:11.5px; font-weight:600; cursor:pointer;
+  }
+  .rest-plus:active{ transform:scale(.94); }
+  .rest-stop{
+    flex:none; width:38px; align-items:center; justify-content:center; padding:0; border-radius:10px;
+    border:1px solid #D9503F; background:rgba(217,80,63,.14); color:#D9503F; font-size:13px; cursor:pointer;
+  }
+  .rest-stop:active{ transform:scale(.9); }
+
+  .exhist{padding:0 16px 14px;}
+  .exhist-toggle{
+    font-size:11px; color:var(--text-dim); font-weight:600; cursor:pointer; display:inline-flex; align-items:center; gap:4px;
+  }
+  .exhist-table{display:none; margin-top:9px; border-top:1px solid var(--line); padding-top:8px;}
+  .exhist-table.open{display:block;}
+  .exhist-row{display:flex; gap:8px; font-size:11px; padding:4px 0; color:var(--text-dim); align-items:center;}
+  .exhist-row .wk{width:52px; flex:none; color:var(--text-faint); font-family:'IBM Plex Mono',monospace;}
+  .exhist-row .vals{flex:1; font-family:'IBM Plex Mono',monospace; color:var(--text);}
+  .exhist-row.current .wk{color:var(--accent);}
+
+  /* ---------- Rest day card ---------- */
+  .restcard{
+    text-align:center; padding:50px 20px; color:var(--text-faint);
+  }
+  .restcard .ic{font-size:32px; margin-bottom:14px;}
+  .restcard p{font-size:13px; line-height:1.6; max-width:260px; margin:0 auto;}
+
+  /* ---------- Plan tab ---------- */
+  .plan-obj{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-md);
+    padding:14px 16px; font-size:12.5px; color:var(--text-dim); line-height:1.55; margin-bottom:18px;
+  }
+  .plan-obj b{color:var(--text);}
+  .plancard{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-md);
+    padding:13px 15px; margin-bottom:10px;
+  }
+  .plancard.rest{opacity:.6;}
+  .plancard .ph{display:flex; justify-content:space-between; align-items:baseline; gap:8px;}
+  .plancard .dow{font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:var(--text-faint); text-transform:uppercase;}
+  .plancard .ses{font-family:'Oswald',sans-serif; font-size:15px; font-weight:600; text-transform:uppercase; margin-top:1px;}
+  .plancard .dur{font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--text-dim);}
+  .plancard .pri{font-size:12px; color:var(--text-dim); margin-top:6px;}
+  .plancard .phi{font-size:11.5px; color:var(--text-faint); margin-top:3px; line-height:1.4;}
+  .plancard .meta2{display:flex; gap:14px; margin-top:8px; font-size:10.5px; color:var(--text-faint); font-family:'IBM Plex Mono',monospace;}
+
+  .phase-section{margin-top:24px;}
+  .rung{
+    display:flex; gap:12px; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius-md);
+    padding:13px 15px; align-items:flex-start; cursor:pointer; margin-bottom:10px;
+  }
+  .rung.current{border-color:var(--accent);}
+  .phase-dot{width:14px;height:14px; border-radius:50%; margin-top:3px; flex:none;}
+  .rung-body{flex:1; min-width:0;}
+  .rung-head{display:flex; justify-content:space-between; align-items:baseline; gap:8px;}
+  .rung-title{font-family:'Oswald',sans-serif; font-weight:600; font-size:14px; text-transform:uppercase;}
+  .rung-wk{font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:var(--text-faint);}
+  .rung-sub{font-size:11.5px; color:var(--text-dim); margin-top:3px;}
+  .rung-detail{display:none; margin-top:8px; padding-top:8px; border-top:1px solid var(--line); font-size:11.5px; color:var(--text-dim); line-height:1.5;}
+  .rung.open .rung-detail{display:block;}
+
+  .note-foot{font-size:11px; color:var(--text-faint); line-height:1.6; margin-top:20px; padding-top:14px; border-top:1px solid var(--line);}
+
+  /* ---------- Progreso tab ---------- */
+  .histtable{width:100%; border-collapse:collapse; font-size:11px;}
+  .histtable th{
+    position:sticky; top:0; background:var(--bg); color:var(--text-faint); font-weight:600; text-transform:uppercase;
+    font-size:9.5px; padding:6px 4px; text-align:center; font-family:'IBM Plex Mono',monospace;
+  }
+  .histtable th:first-child{text-align:left; position:sticky; left:0; z-index:2; background:var(--bg);}
+  .histtable td{padding:8px 4px; text-align:center; border-top:1px solid var(--line); font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:var(--text-dim); white-space:nowrap;}
+  .histtable td:first-child{
+    text-align:left; font-family:'Inter',sans-serif; font-weight:600; color:var(--text); font-size:11.5px;
+    position:sticky; left:0; background:var(--surface); max-width:120px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  }
+  .histtable td.hascell{color:var(--accent); cursor:pointer;}
+  .histtable td.currentwk{background:color-mix(in srgb, var(--accent) 10%, transparent);}
+  .histwrap{overflow-x:auto; border:1px solid var(--line); border-radius:var(--radius-md); background:var(--surface);}
+
+  /* ---------- Week sheet ---------- */
+  #weekOverlay,#backupOverlay{
+    position:fixed; inset:0; background:rgba(0,0,0,.55); z-index:40; opacity:0; pointer-events:none; transition:opacity .25s;
+  }
+  #weekOverlay.open,#backupOverlay.open{opacity:1; pointer-events:auto;}
+  #weekSheet,#backupSheet{
+    position:fixed; left:0; right:0; bottom:0; z-index:50; margin:0 auto; max-width:480px;
+    background:var(--surface); border-top:1px solid var(--line); border-radius:20px 20px 0 0;
+    padding:20px 20px calc(20px + env(safe-area-inset-bottom));
+    transform:translateY(120%); transition:transform .3s cubic-bezier(.32,.72,0,1);
+    box-shadow:0 -14px 34px rgba(0,0,0,.5);
+  }
+  #weekSheet.open,#backupSheet.open{transform:translateY(0);}
+  .sheet-close{position:absolute; top:14px; right:16px; color:var(--text-faint); background:none; border:none; font-size:16px; cursor:pointer; width:28px; height:28px;}
+  .sheet-title{font-family:'Oswald',sans-serif; font-size:16px; text-transform:uppercase; margin-bottom:6px;}
+  .sheet-lead{font-size:12.5px; color:var(--text-dim); line-height:1.5; margin-bottom:14px; padding-right:24px;}
+  .week-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:9px;}
+  .week-cell{
+    padding:12px 0; border-radius:12px; border:1px solid var(--line); background:var(--bg);
+    text-align:center; cursor:pointer;
+  }
+  .week-cell .n{font-family:'Oswald',sans-serif; font-size:17px; font-weight:600;}
+  .week-cell .p{font-size:8.5px; text-transform:uppercase; color:var(--text-faint); margin-top:2px; letter-spacing:.03em;}
+  .week-cell.active{border-color:var(--accent); background:color-mix(in srgb, var(--accent) 16%, var(--bg));}
+
+  .backup-btn{
+    width:100%; padding:13px; border-radius:12px; border:1px solid var(--line); background:var(--bg);
+    color:var(--text); font-weight:600; font-size:13px; cursor:pointer; margin-bottom:10px;
+    display:flex; align-items:center; justify-content:center; gap:8px;
+  }
+  .backup-btn svg{width:15px;height:15px;}
+  .backup-warn{font-size:11px; color:var(--text-faint); line-height:1.5; margin-top:6px;}
+
+  #toast{
+    position:fixed; left:50%; bottom:96px; transform:translateX(-50%) translateY(14px);
+    background:var(--surface-2); color:var(--text); border:1px solid var(--line); padding:10px 18px;
+    border-radius:20px; font-size:12.5px; z-index:60; opacity:0; transition:.25s; pointer-events:none;
+    max-width:80%; text-align:center;
+  }
+  #toast.show{opacity:1; transform:translateX(-50%) translateY(0);}
+
+  /* ---------- Tab bar ---------- */
+  #tabbar{
+    position:sticky; bottom:0; z-index:20; display:grid; grid-template-columns:repeat(3,1fr);
+    background:var(--bg); border-top:1px solid var(--line); padding:8px 6px calc(8px + env(safe-area-inset-bottom));
+  }
+  .tab-btn{
+    display:flex; flex-direction:column; align-items:center; gap:4px; background:none; border:none;
+    color:var(--text-faint); cursor:pointer; padding:6px 0; font-family:'Inter',sans-serif; font-size:10.5px;
+    font-weight:600; letter-spacing:.02em; text-transform:uppercase;
+  }
+  .tab-btn svg{width:20px;height:20px;}
+  .tab-btn.active{color:var(--accent);}
+
+  ::selection{background:var(--accent); color:var(--accent-on);}
+</style>
+</head>
+<body>
+<div id="frame">
+  <header id="topbar">
+    <div class="row">
+      <div class="brand">
+        <div class="brand-mark" id="brandMark"></div>
+        <div style="min-width:0;">
+          <div class="brand-text" id="brandTitle">Mesociclo</div>
+          <div class="brand-sub" id="brandSub">8 semanas</div>
+        </div>
+      </div>
+      <div class="top-actions">
+        <button class="icon-btn" data-action="backup" title="Backup">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 19h16"/></svg>
+        </button>
+        <div class="week-tag" data-action="openWeek">Semana 1</div>
+      </div>
+    </div>
+  </header>
+
+  <main id="screen"></main>
+
+  <nav id="tabbar">
+    <button class="tab-btn active" data-tab="entrenar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6.5 6.5l11 11M4 9l4-4 3 3-4 4-3-3zm10 10l4-4 3 3-4 4-3-3z"/></svg>
+      Entrenar
+    </button>
+    <button class="tab-btn" data-tab="plan">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="4" y1="10" x2="20" y2="10"/><line x1="9" y1="4" x2="9" y2="20"/></svg>
+      Plan
+    </button>
+    <button class="tab-btn" data-tab="progreso">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V14M10 20V10M16 20V6M22 20V3"/></svg>
+      Progreso
+    </button>
+  </nav>
+</div>
+
+<div id="weekOverlay" data-action="closeWeek"></div>
+<div id="weekSheet">
+  <button class="sheet-close" data-action="closeWeek">✕</button>
+  <div class="sheet-title">Elige semana</div>
+  <div class="sheet-lead">El color indica la fase del mesociclo.</div>
+  <div class="week-grid" id="weekGrid"></div>
+</div>
+
+<div id="backupOverlay" data-action="closeBackup"></div>
+<div id="backupSheet">
+  <button class="sheet-close" data-action="closeBackup">✕</button>
+  <div class="sheet-title">Backup de tus datos</div>
+  <div class="sheet-lead">Tus registros se guardan solo en este navegador. Exporta una copia de vez en cuando por si acaso.</div>
+  <button class="backup-btn" data-action="exportBackup">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 19h16"/></svg>
+    Exportar backup (.json)
+  </button>
+  <button class="backup-btn" data-action="triggerImport">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21V9"/><path d="M7 14l5-5 5 5"/><path d="M4 5h16"/></svg>
+    Importar backup
+  </button>
+  <input type="file" id="importFile" accept="application/json" style="display:none;">
+  <div class="backup-warn">Importar un backup sobrescribe los datos guardados actualmente en este navegador.</div>
+</div>
+
+<div id="toast"></div>
+
+<script>
+const DATA = {"titulo":"MESOCICLO HIPERTROFIA · 8 SEMANAS","objetivo_general":"más pecho, brazos y deltoides; mayor profundidad de espalda/trapecio medio-inferior; pierna fuerte con fatiga controlada.","nota_calibrar":"* Las cargas marcadas como “Calibrar S1” se fijan en la semana 1 con la ejecución prescrita. No se inventa una carga si la referencia previa no es técnicamente comparable.","plan":[{"dia":"Lunes","sesion":"Empuje 1","prioridad":"Pecho superior + lateral + tríceps","filosofia":"2 series efectivas como base","duracion":"60-75 min","rir_base":"1 → 0-1","descanso_clave":"Press 3-4 min","notas":"Pecho manda"},{"dia":"Martes","sesion":"Tirón 1","prioridad":"Dorsal + densidad","filosofia":"Dorsal diferenciado de espalda alta","duracion":"65-80 min","rir_base":"1 → 0-1","descanso_clave":"Rack 4-5 min","notas":"Rack + dorsal"},{"dia":"Miércoles","sesion":"Femoral + gemelo","prioridad":"Femoral","filosofia":"Prioridad sin 12 series directas","duracion":"45-60 min","rir_base":"1 → 0-1","descanso_clave":"2:30-3 min","notas":"Bisagra controlada"},{"dia":"Jueves","sesion":"Cuádriceps + glúteo","prioridad":"Mantener/progresar pierna","filosofia":"Escalera que cuida rodillas","duracion":"45-60 min","rir_base":"1-2 → 0","descanso_clave":"3-4 min prensa","notas":"Solo última al fallo técnico"},{"dia":"Viernes","sesion":"Empuje 2","prioridad":"Hombro + pecho + tríceps","filosofia":"Segundo estímulo de pecho","duracion":"60-75 min","rir_base":"1 → 0-1","descanso_clave":"Press 3-4 min","notas":"Lateral prioritario"},{"dia":"Sábado","sesion":"Tirón 2","prioridad":"Espalda alta + trapecio + bíceps","filosofia":"Día 'caparazón'","duracion":"70-85 min","rir_base":"1 → 0-1","descanso_clave":"Remos 3-4 min","notas":"Trapecio sup/medio/inferior cubierto"},{"dia":"Domingo","sesion":"DESCANSO","prioridad":"Recuperación","filosofia":"Sin pesas","duracion":"—","rir_base":"—","descanso_clave":"—","notas":"Recuperar"},{"dia":"* Las cargas marcadas como “Calibrar S1” se fijan en la semana 1 con la ejecución prescrita. No se inventa una carga si la referencia previa no es técnicamente comparable.","sesion":null,"prioridad":null,"filosofia":null,"duracion":null,"rir_base":null,"descanso_clave":null,"notas":null}],"progresion_fases":[{"fase":"Calibración","semanas":"1-2","busca":"Encontrar cargas reproducibles con la técnica prescrita","regla":"No perseguir récords. Una repetición que cambia la mecánica no cuenta."},{"fase":"Progresión","semanas":"3-6","busca":"Aumentar repeticiones dentro del rango","regla":"Cuando ambas series alcanzan techo con técnica limpia, subir el mínimo de carga."},{"fase":"Explotación","semanas":"7-8","busca":"Exprimir progresión sin degradar ejecución","regla":"Mantener ejercicio si responde; no cambiar por ansiedad."},{"fase":"Regla maestra","semanas":"Todas","busca":"Hipertrofia medible, no ego","regla":"Técnica definida > número del Excel."}],"days":[{"key":"01 Empuje 1","title":"EMPUJE 1","objetivo":"Construir grosor de pecho, especialmente arriba, y deltoides lateral.","exercises":[{"nombre":"Press inclinado Technogym convergente","objetivo_principal":"Pectoral superior (porción clavicular)","secundarios":"Deltoides anterior, tríceps","ejecucion":"Press convergente inclinado: escápulas estables, codos en plano cómodo, empujar arriba y hacia dentro","limite_tecnico":"Termina si pierdes posición o el hombro domina claramente","progresion_regla":"Al llegar al techo de reps con técnica limpia, subir el mínimo de carga","sets":[{"reps":"6-8","kg_ref":"≈50 kg","rir":"1","descanso":"4 min"},{"reps":"8-10","kg_ref":"45 kg","rir":"0-1","descanso":"3 min"}]},{"nombre":"Press convergente más horizontal","objetivo_principal":"Pectoral medio / grosor global","secundarios":"Tríceps, deltoides anterior","ejecucion":"Aducción horizontal estable; no acortar el recorrido al fatigarte","limite_tecnico":"Misma trayectoria de la 1.ª a la última rep","progresion_regla":"Doble progresión","sets":[{"reps":"8-10","kg_ref":"≈42,5 kg","rir":"1","descanso":"3 min"},{"reps":"10-12","kg_ref":"37,5-40 kg","rir":"0-1","descanso":"3 min"}]},{"nombre":"Contractora","objetivo_principal":"Pectoral, posición acortada","secundarios":"Deltoides anterior","ejecucion":"Juntar brazos desde el pecho, sin adelantar hombros","limite_tecnico":"Parar si hombros se van hacia delante","progresion_regla":"Subir carga al completar 15/15 limpias","sets":[{"reps":"10-15","kg_ref":"Calibrar S1","rir":"1","descanso":"2 min"},{"reps":"10-15","kg_ref":"Calibrar S1","rir":"0-1","descanso":"2 min"}]},{"nombre":"Lateral máquina","objetivo_principal":"Deltoides lateral","secundarios":"Trapecio superior secundario","ejecucion":"Elevar húmero en plano escapular sin encoger hombros","limite_tecnico":"Sin impulso ni encogimiento","progresion_regla":"Primero reps; después carga","sets":[{"reps":"10-15","kg_ref":"≈60 kg","rir":"1","descanso":"2 min"},{"reps":"10-15","kg_ref":"50 kg","rir":"1","descanso":"2 min"},{"reps":"10-15","kg_ref":"45 kg","rir":"0-1","descanso":"2 min"}]},{"nombre":"Pushdown Technogym/polea","objetivo_principal":"Tríceps (lateral/medial)","secundarios":"—","ejecucion":"Extensión de codo con hombro quieto","limite_tecnico":"Sin compensar con hombro","progresion_regla":"Doble progresión","sets":[{"reps":"8-12","kg_ref":"Carga actual tolerable","rir":"1","descanso":"2:30 min"},{"reps":"8-12","kg_ref":"Carga actual tolerable","rir":"0-1","descanso":"2:30 min"}]},{"nombre":"Extensión overhead unilateral en polea","objetivo_principal":"Tríceps (cabeza larga, en estiramiento)","secundarios":"—","ejecucion":"Codo por encima y detrás de la cabeza, extender sin abrir el codo hacia fuera","limite_tecnico":"Cero dolor de codo; no arquear zona lumbar","progresion_regla":"Subir tras 12/12 limpias","sets":[{"reps":"10-12","kg_ref":"Calibrar S1","rir":"1","descanso":"2 min"},{"reps":"10-12","kg_ref":"Calibrar S1","rir":"0-1","descanso":"2 min"}]}]},{"key":"02 Tirón 1","title":"TIRÓN 1","objetivo":"Dorsal ancho + densidad, sin redundancia de remos.","exercises":[{"nombre":"Rack pull","objetivo_principal":"Densidad global: erectores + trapecio","secundarios":"Dorsal/agarre estabilizan","ejecucion":"Bloqueo sólido; barra cerca; sin tirón inicial","limite_tecnico":"Agarre o pérdida de posición = fin de serie","progresion_regla":"Subir reps antes de carga","sets":[{"reps":"6-8","kg_ref":"190 kg","rir":"1","descanso":"4-5 min"},{"reps":"8-10","kg_ref":"170-175 kg","rir":"1","descanso":"4-5 min"}]},{"nombre":"Jalón Hammer 70° prono","objetivo_principal":"Dorsal / anchura","secundarios":"Bíceps, redondo mayor","ejecucion":"Codo hacia abajo y cadera; torso estable","limite_tecnico":"No echar torso atrás para terminar","progresion_regla":"Doble progresión","sets":[{"reps":"8-12","kg_ref":"≈70 kg","rir":"1","descanso":"3 min"},{"reps":"8-12","kg_ref":"65 kg","rir":"0-1","descanso":"3 min"}]},{"nombre":"Remo Hammer apoyado supino/neutro-supino","objetivo_principal":"Dorsal + espesor inferior","secundarios":"Bíceps","ejecucion":"Pecho pegado; codo hacia cadera, no hacia fuera","limite_tecnico":"Si despegas pecho, terminó","progresion_regla":"Doble progresión técnica","sets":[{"reps":"8-12","kg_ref":"Calibrar S1","rir":"1","descanso":"3 min"},{"reps":"8-12","kg_ref":"Calibrar S1","rir":"0-1","descanso":"3 min"}]},{"nombre":"Y-raise en polea","objetivo_principal":"Trapecio inferior","secundarios":"Serrato, deltoides","ejecucion":"Brazos en Y; rotación ascendente escapular controlada","limite_tecnico":"No convertirlo en encogimiento","progresion_regla":"Progresar muy despacio","sets":[{"reps":"10-15","kg_ref":"Ligero, calibrar","rir":"2","descanso":"2 min"},{"reps":"10-15","kg_ref":"Ligero, calibrar","rir":"1","descanso":"2 min"}]},{"nombre":"Posterior contractora","objetivo_principal":"Deltoides posterior","secundarios":"Trapecio medio","ejecucion":"Abrir desde hombro sin encoger","limite_tecnico":"No dominar con trapecio","progresion_regla":"Doble progresión","sets":[{"reps":"10-15","kg_ref":"≈35 kg","rir":"1","descanso":"2 min"},{"reps":"10-15","kg_ref":"≈35 kg","rir":"1","descanso":"2 min"},{"reps":"10-15","kg_ref":"≈35 kg","rir":"0-1","descanso":"2 min"}]},{"nombre":"Curl inclinado","objetivo_principal":"Bíceps, énfasis cabeza larga","secundarios":"Braquial","ejecucion":"Húmero algo detrás del torso; hombro inmóvil","limite_tecnico":"No adelantar hombro","progresion_regla":"Doble progresión","sets":[{"reps":"8-12","kg_ref":"≈14-16 kg","rir":"1","descanso":"2:30 min"},{"reps":"8-12","kg_ref":"≈14-16 kg","rir":"0-1","descanso":"2:30 min"}]},{"nombre":"Curl barra / máquina estable","objetivo_principal":"Bíceps global","secundarios":"Braquial","ejecucion":"Flexión de codo sin balanceo","limite_tecnico":"Torso quieto","progresion_regla":"Doble progresión","sets":[{"reps":"8-12","kg_ref":"Referencia limpia actual","rir":"1","descanso":"2:30 min"},{"reps":"8-12","kg_ref":"Referencia limpia actual","rir":"0-1","descanso":"2:30 min"}]}]},{"key":"03 Femoral + gemelo","title":"FEMORAL + GEMELO","objetivo":"Hacer avanzar femoral con estímulo alto y fatiga contenida.","exercises":[{"nombre":"Femoral de pie unilateral","objetivo_principal":"Femoral: flexión de rodilla","secundarios":"—","ejecucion":"Cadera estable; flexionar rodilla sin impulso","limite_tecnico":"Técnica idéntica ambos lados","progresion_regla":"Subir reps/carga manteniendo control","sets":[{"reps":"8-10","kg_ref":"Carga habitual","rir":"1","descanso":"2:30-3 min"},{"reps":"8-10","kg_ref":"Carga habitual","rir":"0-1","descanso":"2:30-3 min"}]},{"nombre":"Peso muerto semirrígido máquina","objetivo_principal":"Femoral en longitud + glúteo","secundarios":"Erectores","ejecucion":"Bisagra de cadera, tibia estable, estiramiento controlado","limite_tecnico":"No convertirlo en levantamiento máximo","progresion_regla":"Progresión conservadora","sets":[{"reps":"8-10","kg_ref":"Carga ligera-moderada","rir":"2","descanso":"3 min"},{"reps":"8-10","kg_ref":"Carga ligera-moderada","rir":"1","descanso":"3 min"}]},{"nombre":"Femoral sentado","objetivo_principal":"Femoral en longitud larga","secundarios":"—","ejecucion":"Cadera fija; controlar estiramiento","limite_tecnico":"Sin despegar pelvis","progresion_regla":"Doble progresión","sets":[{"reps":"8-12","kg_ref":"Carga habitual calibrada","rir":"1","descanso":"2:30-3 min"},{"reps":"8-12","kg_ref":"Carga habitual calibrada","rir":"0-1","descanso":"2:30-3 min"}]},{"nombre":"Gemelo","objetivo_principal":"Gemelos","secundarios":"—","ejecucion":"Recorrido completo; pausa abajo y arriba","limite_tecnico":"Sin rebotes","progresion_regla":"Reps → carga","sets":[{"reps":"8-12","kg_ref":"Carga habitual","rir":"1","descanso":"2 min"},{"reps":"8-12","kg_ref":"Carga habitual","rir":"1","descanso":"2 min"},{"reps":"8-12","kg_ref":"Carga habitual","rir":"0-1","descanso":"2 min"}]}]},{"key":"04 Cuádriceps + glúteo","title":"CUÁDRICEPS + GLÚTEO","objetivo":"Mantener/progresar una pierna fuerte cuidando rodillas y recuperación.","exercises":[{"nombre":"Extensión de piernas","objetivo_principal":"Cuádriceps","secundarios":"—","ejecucion":"Calentamiento progresivo de rodilla; extensión controlada","limite_tecnico":"Solo última al fallo técnico","progresion_regla":"Mantener escalera; subir cuando rango se domine","sets":[{"reps":"8-12","kg_ref":"≈80 kg","rir":"1-2","descanso":"2:30-3 min"},{"reps":"8-10","kg_ref":"100 kg","rir":"1","descanso":"2:30-3 min"},{"reps":"6-10","kg_ref":"120 kg*","rir":"0","descanso":"2:30-3 min"}]},{"nombre":"Prensa","objetivo_principal":"Cuádriceps + glúteo","secundarios":"Aductores","ejecucion":"Aproximaciones 120→200; profundidad estable","limite_tecnico":"No buscar récord si cambia profundidad","progresion_regla":"Progresar la última serie solo con técnica igual","sets":[{"reps":"Escalera pesada","kg_ref":"≈240 kg","rir":"1-2","descanso":"3-4 min"},{"reps":"Escalera pesada","kg_ref":"280 kg","rir":"1","descanso":"3-4 min"},{"reps":"Escalera pesada","kg_ref":"calibrar desde 340×7","rir":"0","descanso":"3-4 min"}]},{"nombre":"Hip thrust","objetivo_principal":"Glúteo mayor","secundarios":"Femoral secundario","ejecucion":"Extensión de cadera; pelvis controlada","limite_tecnico":"No hiperextender lumbar","progresion_regla":"Doble progresión","sets":[{"reps":"8-12","kg_ref":"Carga habitual","rir":"1","descanso":"3 min"},{"reps":"8-12","kg_ref":"Carga habitual","rir":"0-1","descanso":"3 min"}]},{"nombre":"Lateral en cable","objetivo_principal":"Deltoides lateral","secundarios":"—","ejecucion":"Tensión continua; plano escapular","limite_tecnico":"Sin encoger hombro","progresion_regla":"Reps → carga","sets":[{"reps":"10-15","kg_ref":"Calibrar S1","rir":"1","descanso":"2 min"},{"reps":"10-15","kg_ref":"Calibrar S1","rir":"1","descanso":"2 min"}]}]},{"key":"05 Empuje 2","title":"EMPUJE 2","objetivo":"Hombro tridimensional + segundo estímulo real de pecho.","exercises":[{"nombre":"Press hombro máquina placas","objetivo_principal":"Deltoides anterior / masa global hombro","secundarios":"Tríceps","ejecucion":"Press estable sin convertirlo en empuje corporal","limite_tecnico":"Sin grind ni cambio de recorrido","progresion_regla":"Doble progresión","sets":[{"reps":"6-8","kg_ref":"≈80 kg","rir":"1","descanso":"3:30-4 min"},{"reps":"8-10","kg_ref":"70 kg","rir":"0-1","descanso":"3:30-4 min"}]},{"nombre":"Laterales mancuerna","objetivo_principal":"Deltoides lateral","secundarios":"Trapecio sup. secundario","ejecucion":"Elevar con control; mínima inercia","limite_tecnico":"Sin balanceo creciente","progresion_regla":"Reps → carga","sets":[{"reps":"10-15","kg_ref":"Calibrar S1","rir":"1","descanso":"2 min"},{"reps":"10-15","kg_ref":"Calibrar S1","rir":"1","descanso":"2 min"},{"reps":"10-15","kg_ref":"Calibrar S1","rir":"0-1","descanso":"2 min"}]},{"nombre":"Press pecho convergente/plano","objetivo_principal":"Pectoral medio","secundarios":"Tríceps, deltoides anterior","ejecucion":"Aducción horizontal, escápulas estables","limite_tecnico":"No acortar recorrido","progresion_regla":"Doble progresión","sets":[{"reps":"8-12","kg_ref":"Calibrar S1","rir":"1","descanso":"3 min"},{"reps":"8-12","kg_ref":"Calibrar S1","rir":"0-1","descanso":"3 min"}]},{"nombre":"Cruce de poleas","objetivo_principal":"Pectoral (tensión continua, énfasis en estiramiento)","secundarios":"—","ejecucion":"Poleas altas, cruzar manos delante del cuerpo buscando el estiramiento inicial","limite_tecnico":"Hombro estable, no dejar que domine el deltoides anterior","progresion_regla":"Doble progresión","sets":[{"reps":"10-15","kg_ref":"Calibrar S1","rir":"1","descanso":"2 min"},{"reps":"10-15","kg_ref":"Calibrar S1","rir":"0-1","descanso":"2 min"}]},{"nombre":"Pushdown","objetivo_principal":"Tríceps","secundarios":"—","ejecucion":"Extensión pura de codo","limite_tecnico":"Sin dolor ni hombro","progresion_regla":"Doble progresión","sets":[{"reps":"8-12","kg_ref":"Carga actual tolerable","rir":"1","descanso":"2:30 min"},{"reps":"8-12","kg_ref":"Carga actual tolerable","rir":"0-1","descanso":"2:30 min"}]},{"nombre":"Extensión overhead con cuerda a dos manos","objetivo_principal":"Tríceps (cabeza larga, 2º toque semanal)","secundarios":"—","ejecucion":"Cuerda tras la nuca, codos altos y fijos, extender sin abrir codos","limite_tecnico":"Cero dolor de codo/hombro; no arquear zona lumbar","progresion_regla":"Doble progresión","sets":[{"reps":"10-12","kg_ref":"Calibrar S1","rir":"1","descanso":"2 min"},{"reps":"10-12","kg_ref":"Calibrar S1","rir":"0-1","descanso":"2 min"}]}]},{"key":"06 Tirón 2","title":"TIRÓN 2","objetivo":"Construir el 'caparazón': espalda media, trapecio y profundidad.","exercises":[{"nombre":"Remo barra estricto","objetivo_principal":"Espalda media / espesor general","secundarios":"Dorsal, erectores","ejecucion":"Torso fijado; remar sin latigazo","limite_tecnico":"Si aparece latigazo, terminó","progresion_regla":"Solo cuentan reps técnicamente válidas","sets":[{"reps":"8-10","kg_ref":"≈125 kg","rir":"1","descanso":"3:30-4 min"},{"reps":"10-12","kg_ref":"110 kg","rir":"0-1","descanso":"3:30-4 min"}]},{"nombre":"Remo con apoyo para espalda alta / Remo T","objetivo_principal":"Trapecio medio + romboides","secundarios":"Deltoides posterior","ejecucion":"Codos 60-80°; protracción controlada y retracción real","limite_tecnico":"Pecho apoyado; no despegarse","progresion_regla":"Doble progresión","sets":[{"reps":"8-12","kg_ref":"Calibrar S1","rir":"1","descanso":"3 min"},{"reps":"8-12","kg_ref":"Calibrar S1","rir":"0-1","descanso":"3 min"}]},{"nombre":"Jalón Hammer supino vertical","objetivo_principal":"Dorsal","secundarios":"Bíceps","ejecucion":"Hombro/escápula controlados; bajar alineado al dorsal","limite_tecnico":"No sobrepasar recorrido útil","progresion_regla":"Doble progresión","sets":[{"reps":"8-12","kg_ref":"≈50-55 kg según máquina","rir":"1","descanso":"3 min"},{"reps":"8-12","kg_ref":"≈50-55 kg según máquina","rir":"0-1","descanso":"3 min"}]},{"nombre":"Kelso shrug apoyado","objetivo_principal":"Trapecio medio","secundarios":"Romboides","ejecucion":"Casi sin flexionar codo; mover escápulas","limite_tecnico":"No convertirlo en remo","progresion_regla":"Reps perfectas antes de carga","sets":[{"reps":"10-15","kg_ref":"Ligero-moderado","rir":"2","descanso":"2 min"},{"reps":"10-15","kg_ref":"Ligero-moderado","rir":"1","descanso":"2 min"}]},{"nombre":"Encogimiento mancuerna","objetivo_principal":"Trapecio superior","secundarios":"—","ejecucion":"Elevación vertical; 1-2 s arriba","limite_tecnico":"Sin círculos ni rebote","progresion_regla":"60 kg: progresar hasta 10/10 con mejor control","sets":[{"reps":"8-10","kg_ref":"60 kg por mancuerna","rir":"1","descanso":"3 min"},{"reps":"8-10","kg_ref":"60 kg por mancuerna","rir":"0-1","descanso":"3 min"}]},{"nombre":"Posterior contractora","objetivo_principal":"Deltoides posterior","secundarios":"Trapecio medio","ejecucion":"Abrir desde hombro, control total","limite_tecnico":"Sin trapecio dominante","progresion_regla":"Reps → carga","sets":[{"reps":"10-15","kg_ref":"≈35 kg","rir":"1","descanso":"2 min"},{"reps":"10-15","kg_ref":"≈35 kg","rir":"1","descanso":"2 min"},{"reps":"10-15","kg_ref":"≈35 kg","rir":"0-1","descanso":"2 min"}]},{"nombre":"Predicador máquina","objetivo_principal":"Bíceps (hombro flexionado)","secundarios":"Braquial","ejecucion":"Brazo fijo; flexión de codo","limite_tecnico":"No levantar hombro","progresion_regla":"Doble progresión","sets":[{"reps":"8-12","kg_ref":"≈37,5 kg","rir":"1","descanso":"2:30-3 min"},{"reps":"8-12","kg_ref":"32,5 kg","rir":"0-1","descanso":"2:30-3 min"}]},{"nombre":"Martillo mancuerna","objetivo_principal":"Braquial + braquiorradial","secundarios":"Bíceps","ejecucion":"Agarre neutro; sin balanceo","limite_tecnico":"Torso estable","progresion_regla":"Doble progresión","sets":[{"reps":"8-12","kg_ref":"≈26 kg","rir":"1","descanso":"2:30 min"},{"reps":"8-12","kg_ref":"24 kg","rir":"0-1","descanso":"2:30 min"}]}]}]};
+</script>
+<script>
+(function(){
+  "use strict";
+
+  var STORAGE_KEY = "meso_sergio_v1";
+
+  var PHASE_COLOR = {
+    "Calibración": "#8B96A5",
+    "Progresión": "#3FAE6A",
+    "Explotación": "#E0912F"
+  };
+  var PHASE_ON = {
+    "Calibración": "#0d1013",
+    "Progresión": "#0b1710",
+    "Explotación": "#1d1204"
+  };
+
+  function phaseForWeek(week){
+    if (week <= 2) return "Calibración";
+    if (week <= 6) return "Progresión";
+    return "Explotación";
+  }
+  function phaseFromRange(semanas){
+    // "1-2" / "3-6" / "7-8" / "Todas"
+    return semanas;
+  }
+
+  var DOW = ["Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"];
+
+  // ---- state ----
+  var state = {
+    tab: "entrenar",
+    week: 1,
+    day: DATA.days[0].key,
+    log: {},   // key: day|exIdx|setIdx|week -> {kg,reps}
+    exOpen: {},   // key: day|exIdx -> bool (detail expanded)
+    histOpen: {}  // key: day|exIdx -> bool (history expanded)
+  };
+
+  function byId(id){ return document.getElementById(id); }
+
+  // ---------- persistence ----------
+  function loadState(){
+    try{
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return;
+      var saved = JSON.parse(raw);
+      if (saved && typeof saved === "object"){
+        if (saved.week) state.week = saved.week;
+        if (saved.day) state.day = saved.day;
+        if (saved.log) state.log = saved.log;
+      }
+    } catch(err){ /* corrupted or unavailable storage: start fresh */ }
+  }
+  function saveState(){
+    try{
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({ week: state.week, day: state.day, log: state.log }));
+    } catch(err){ /* storage full or blocked: silently ignore */ }
+  }
+
+  function showToast(msg){
+    var t = byId("toast");
+    t.textContent = msg;
+    t.classList.add("show");
+    clearTimeout(showToast._t);
+    showToast._t = setTimeout(function(){ t.classList.remove("show"); }, 2400);
+  }
+
+  // ---------- helpers ----------
+  function findDay(key){
+    for (var i=0;i<DATA.days.length;i++){ if (DATA.days[i].key===key) return DATA.days[i]; }
+    return DATA.days[0];
+  }
+  function planRowForDay(dayKey){
+    var title = findDay(dayKey).title;
+    for (var i=0;i<DATA.plan.length;i++){
+      if (String(DATA.plan[i].sesion).toUpperCase()===String(title).toUpperCase()) return DATA.plan[i];
+    }
+    return null;
+  }
+  var timers = {}; // key -> { interval, remaining }
+  var timerExtra = {}; // key -> extra seconds added manually via +30"
+  var wakeLock = null;
+  var audioCtx = null;
+
+  function unlockAudio(){
+    try{
+      if (!audioCtx){
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      } else if (audioCtx.state === "suspended"){
+        audioCtx.resume();
+      }
+    } catch(err){ /* Web Audio not available */ }
+  }
+  document.addEventListener("click", unlockAudio);
+
+  function beep(freq, duration, delay){
+    if (!audioCtx) return;
+    try{
+      var osc = audioCtx.createOscillator();
+      var gain = audioCtx.createGain();
+      osc.type = "sine";
+      osc.frequency.value = freq;
+      gain.gain.value = 0.16;
+      osc.connect(gain); gain.connect(audioCtx.destination);
+      var t0 = audioCtx.currentTime + (delay||0);
+      osc.start(t0);
+      osc.stop(t0 + duration);
+    } catch(err){ /* ignore */ }
+  }
+  function notifyTimerDone(){
+    try{ if (navigator.vibrate) navigator.vibrate([220,110,220]); } catch(err){}
+    beep(880, 0.16, 0);
+    beep(880, 0.16, 0.26);
+  }
+
+  async function requestWakeLock(){
+    try{
+      if ("wakeLock" in navigator){
+        wakeLock = await navigator.wakeLock.request("screen");
+        wakeLock.addEventListener("release", function(){ wakeLock = null; });
+      }
+    } catch(err){ /* not supported / denied: ignore silently */ }
+  }
+  function releaseWakeLockIfIdle(){
+    if (Object.keys(timers).length === 0 && wakeLock){
+      wakeLock.release().catch(function(){});
+      wakeLock = null;
+    }
+  }
+  document.addEventListener("visibilitychange", function(){
+    if (document.visibilityState === "visible" && Object.keys(timers).length > 0 && !wakeLock){
+      requestWakeLock();
+    }
+  });
+
+  function cssSafe(s){ return s.replace(/[^a-zA-Z0-9]/g,"_"); }
+
+  function parseRestSeconds(descanso){
+    if (!descanso) return null;
+    var str = String(descanso).toLowerCase();
+    if (str.indexOf("min")===-1 && str.indexOf(":")===-1 && !/\d/.test(str)) return null;
+    var mmss = str.match(/(\d+):(\d+)/);
+    if (mmss) return parseInt(mmss[1],10)*60 + parseInt(mmss[2],10);
+    var num = str.match(/(\d+)/);
+    if (num) return parseInt(num[1],10)*60;
+    return null;
+  }
+  function fmtClock(s){
+    var m = Math.floor(s/60), sec = s%60;
+    return m+":"+(sec<10?"0":"")+sec;
+  }
+  function fmtMin(totalSeconds){
+    var m = totalSeconds/60;
+    return (m%1===0 ? m : m.toFixed(1)) + " min";
+  }
+  function startTimer(key, baseSeconds, elId, stopId){
+    if (timers[key]) return;
+    var total = baseSeconds + (timerExtra[key]||0);
+    var btn = byId(elId);
+    if (!btn) return;
+    btn.classList.remove("done");
+    btn.classList.add("running");
+    timers[key] = { remaining: total };
+    btn.textContent = "⏱ "+fmtClock(timers[key].remaining);
+    var stopBtn = byId(stopId);
+    if (stopBtn) stopBtn.style.display = "flex";
+    requestWakeLock();
+    timers[key].interval = setInterval(function(){
+      if (!timers[key]) return;
+      timers[key].remaining--;
+      var b = byId(elId);
+      if (!b){ clearInterval(timers[key].interval); delete timers[key]; releaseWakeLockIfIdle(); return; }
+      if (timers[key].remaining <= 0){
+        clearInterval(timers[key].interval);
+        delete timers[key];
+        timerExtra[key] = 0;
+        b.classList.remove("running");
+        b.classList.add("done");
+        b.textContent = "✓ ¡Descanso listo!";
+        var sb = byId(stopId);
+        if (sb) sb.style.display = "none";
+        notifyTimerDone();
+        releaseWakeLockIfIdle();
+        setTimeout(function(){
+          var bb = byId(elId);
+          if (bb && !bb.classList.contains("running")){ bb.classList.remove("done"); bb.textContent = "⏱ Descansar "+fmtMin(baseSeconds); }
+        }, 3000);
+      } else {
+        b.textContent = "⏱ "+fmtClock(timers[key].remaining);
+      }
+    }, 1000);
+  }
+  function startIfIdle(key, seconds, elId, stopId){
+    if (timers[key]) return; // already running: main chip no longer toggles it off, use the stop button instead
+    startTimer(key, seconds, elId, stopId);
+  }
+  function stopTimerManual(key, elId, baseSeconds, stopId){
+    if (!timers[key]) return;
+    clearInterval(timers[key].interval);
+    delete timers[key];
+    timerExtra[key] = 0;
+    var btn = byId(elId);
+    if (btn){ btn.classList.remove("running","done"); btn.textContent = "⏱ Descansar "+fmtMin(baseSeconds); }
+    var stopBtn = byId(stopId);
+    if (stopBtn) stopBtn.style.display = "none";
+    releaseWakeLockIfIdle();
+  }
+  function addThirty(key, elId, baseSeconds){
+    timerExtra[key] = (timerExtra[key]||0) + 30;
+    var btn = byId(elId);
+    if (!btn) return;
+    if (timers[key]){
+      timers[key].remaining += 30;
+      btn.textContent = "⏱ "+fmtClock(timers[key].remaining);
+    } else {
+      btn.classList.remove("done");
+      var total = baseSeconds + timerExtra[key];
+      btn.textContent = "⏱ Descansar "+fmtMin(total);
+    }
+  }
+
+  function setKey(dayKey, exIdx, setIdx, week){
+    return dayKey+"|"+exIdx+"|"+setIdx+"|"+(week!==undefined?week:state.week);
+  }
+  function getSet(dayKey, exIdx, setIdx, week){
+    return state.log[setKey(dayKey, exIdx, setIdx, week)] || { kg:"", reps:"" };
+  }
+  function ensureSetVal(dayKey, exIdx, setIdx){
+    var k = setKey(dayKey, exIdx, setIdx);
+    if (!state.log[k]) state.log[k] = { kg:"", reps:"" };
+    return state.log[k];
+  }
+
+  function applyAccent(){
+    var phase = phaseForWeek(state.week);
+    var c = PHASE_COLOR[phase] || "#3FAE6A";
+    var on = PHASE_ON[phase] || "#0b1710";
+    document.documentElement.style.setProperty("--accent", c);
+    document.documentElement.style.setProperty("--accent-on", on);
+    byId("brandSub").textContent = phase + " · Semana " + state.week + "/8";
+    var wt = document.querySelector('[data-action="openWeek"]');
+    if (wt) wt.textContent = "Semana " + state.week;
+  }
+
+  // ---------- render ----------
+  function render(){
+    applyAccent();
+    document.querySelectorAll(".tab-btn").forEach(function(b){
+      b.classList.toggle("active", b.dataset.tab===state.tab);
+    });
+    if (state.tab==="entrenar") renderEntrenar();
+    else if (state.tab==="plan") renderPlan();
+    else if (state.tab==="progreso") renderProgreso();
+    saveState();
+  }
+
+  function setTab(tab){
+    state.tab = tab;
+    render();
+    byId("screen").scrollTop = 0;
+  }
+
+  function setScreenHTML(html){
+    var screenEl = byId("screen");
+    var oldStrip = screenEl.querySelector(".day-scroll");
+    var stripScroll = oldStrip ? oldStrip.scrollLeft : null;
+    screenEl.innerHTML = html;
+    if (stripScroll !== null){
+      var newStrip = screenEl.querySelector(".day-scroll");
+      if (newStrip) newStrip.scrollLeft = stripScroll;
+    }
+  }
+
+  // ---------- ENTRENAR ----------
+  function renderEntrenar(){
+    var html = "";
+    html += '<div class="screen-title">Entrenar</div>';
+    html += '<div class="screen-lead">'+DATA.titulo+'</div>';
+
+    html += '<div class="day-scroll">';
+    DATA.days.forEach(function(d){
+      var pr = planRowForDay(d.key);
+      var dow = pr ? pr.dia : "";
+      var active = state.day===d.key;
+      html += '<div class="day-chip'+(active?' active':'')+'" data-action="pickDay" data-value="'+d.key+'">';
+      html += '<div class="dow">'+dow+'</div><div class="ses">'+d.title+'</div></div>';
+    });
+    html += '<div class="day-chip rest"><div class="dow">Domingo</div><div class="ses">Descanso</div></div>';
+    html += '</div>';
+
+    var day = findDay(state.day);
+    day.exercises.forEach(function(ex, exIdx){
+      var exKey = state.day+"|"+exIdx;
+      var detailOpen = !!state.exOpen[exKey];
+      var histOpen = !!state.histOpen[exKey];
+
+      html += '<div class="exwrap">';
+      html += '<div class="exhead">';
+      html += '<div class="exname">'+ex.nombre+'</div>';
+      html += '<div class="exsub">'+ex.objetivo_principal+(ex.secundarios&&ex.secundarios!=="—"?' · '+ex.secundarios:'')+'</div>';
+      html += '<div class="exlimit">⚠ '+ex.limite_tecnico+'</div>';
+      html += '<div class="extoggle" data-action="toggleDetail" data-key="'+exKey+'">'+(detailOpen?'▾':'▸')+' Cómo hacerlo</div>';
+      html += '<div class="exdetail'+(detailOpen?' open':'')+'"><b>Ejecución:</b> '+ex.ejecucion+'<br><b>Progresión:</b> '+ex.progresion_regla+'</div>';
+      html += '</div>';
+
+      html += '<div class="setlog">';
+      ex.sets.forEach(function(s, setIdx){
+        var val = getSet(state.day, exIdx, setIdx);
+        var k = setKey(state.day, exIdx, setIdx);
+        html += '<div class="setrow">';
+        html += '<div class="setnum">S'+(setIdx+1)+'</div>';
+        html += '<div class="settarget"><div class="t1">'+s.reps+' rep · RIR '+s.rir+'</div><div class="t2">ref '+s.kg_ref+' · descanso '+s.descanso+'</div>';
+        var prevRef = null;
+        for (var pw = state.week-1; pw>=1; pw--){
+          var pv = getSet(state.day, exIdx, setIdx, pw);
+          if (pv.kg || pv.reps){ prevRef = pv; break; }
+        }
+        if (prevRef){
+          html += '<div class="t3">↺ Semana anterior: '+(prevRef.kg||'?')+' kg × '+(prevRef.reps||'?')+' rep</div>';
+        }
+        html += '</div>';
+        html += '<div class="setinputs">';
+        html += '<input type="number" inputmode="decimal" enterkeyhint="done" placeholder="kg" value="'+val.kg+'" data-action="setkg" data-key="'+k+'">';
+        html += '<input type="number" inputmode="numeric" enterkeyhint="done" placeholder="reps" value="'+val.reps+'" data-action="setreps" data-key="'+k+'">';
+        html += '</div></div>';
+        var restSec = parseRestSeconds(s.descanso);
+        if (restSec){
+          var tid = "timer-"+cssSafe(k);
+          var sid = "stop-"+cssSafe(k);
+          html += '<div class="rest-row">';
+          html += '<div class="rest-timer" id="'+tid+'" data-action="timer" data-key="'+k+'" data-seconds="'+restSec+'" data-stopid="'+sid+'">⏱ Descansar '+fmtMin(restSec)+'</div>';
+          html += '<button class="rest-plus" data-action="addtime" data-key="'+k+'" data-timerid="'+tid+'" data-base="'+restSec+'">+30″</button>';
+          html += '<button class="rest-stop" id="'+sid+'" data-action="stoptime" data-key="'+k+'" data-timerid="'+tid+'" data-base="'+restSec+'" style="display:none">■</button>';
+          html += '</div>';
+        }
+      });
+      html += '</div>';
+
+      // history
+      var hasAnyHistory = false;
+      for (var w=1; w<=8; w++){
+        for (var si=0; si<ex.sets.length; si++){
+          var v = getSet(state.day, exIdx, si, w);
+          if (v.kg || v.reps){ hasAnyHistory = true; break; }
+        }
+        if (hasAnyHistory) break;
+      }
+      if (hasAnyHistory){
+        html += '<div class="exhist">';
+        html += '<div class="exhist-toggle" data-action="toggleHist" data-key="'+exKey+'">'+(histOpen?'▾':'▸')+' Ver semanas anteriores</div>';
+        html += '<div class="exhist-table'+(histOpen?' open':'')+'">';
+        for (var w2=1; w2<=8; w2++){
+          var parts = [];
+          for (var si2=0; si2<ex.sets.length; si2++){
+            var v2 = getSet(state.day, exIdx, si2, w2);
+            if (v2.kg || v2.reps) parts.push((v2.kg||"?")+"×"+(v2.reps||"?"));
+          }
+          if (!parts.length) continue;
+          html += '<div class="exhist-row'+(w2===state.week?' current':'')+'"><span class="wk">Sem '+w2+'</span><span class="vals">'+parts.join(" · ")+'</span></div>';
+        }
+        html += '</div></div>';
+      }
+
+      html += '</div>';
+    });
+
+    setScreenHTML(html);
+  }
+
+  // ---------- PLAN ----------
+  function renderPlan(){
+    var html = "";
+    html += '<div class="screen-title">Plan</div>';
+    html += '<div class="plan-obj"><b>Objetivo del mesociclo:</b> '+DATA.objetivo_general+'</div>';
+
+    DATA.plan.forEach(function(p){
+      var isRest = p.sesion==="DESCANSO";
+      html += '<div class="plancard'+(isRest?' rest':'')+'">';
+      html += '<div class="ph"><div><div class="dow">'+p.dia+'</div><div class="ses">'+p.sesion+'</div></div><div class="dur mono">'+(p.duracion||'')+'</div></div>';
+      if (!isRest){
+        html += '<div class="pri">'+p.prioridad+'</div>';
+        html += '<div class="phi">'+p.filosofia+'</div>';
+        html += '<div class="meta2"><span>RIR '+p.rir_base+'</span><span>'+p.descanso_clave+'</span></div>';
+      }
+      html += '</div>';
+    });
+
+    html += '<div class="phase-section">';
+    html += '<div class="step-title" style="font-size:14px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;margin-bottom:12px;">Fases de progresión</div>';
+    var currentPhase = phaseForWeek(state.week);
+    DATA.progresion_fases.forEach(function(f, idx){
+      var isCurrent = f.fase===currentPhase;
+      html += '<div class="rung'+(isCurrent?' open current':'')+'" data-action="toggleRung" data-idx="'+idx+'">';
+      html += '<div class="phase-dot" style="background:'+(PHASE_COLOR[f.fase]||'#888')+'"></div>';
+      html += '<div class="rung-body"><div class="rung-head"><span class="rung-title">'+f.fase+'</span><span class="rung-wk">Sem '+f.semanas+'</span></div>';
+      html += '<div class="rung-sub">'+f.busca+'</div>';
+      html += '<div class="rung-detail">'+f.regla+'</div></div></div>';
+    });
+    html += '</div>';
+
+    if (DATA.nota_calibrar){
+      html += '<div class="note-foot">'+DATA.nota_calibrar+'</div>';
+    }
+
+    setScreenHTML(html);
+  }
+
+  // ---------- PROGRESO ----------
+  function renderProgreso(){
+    var html = "";
+    html += '<div class="screen-title">Progreso</div>';
+    html += '<div class="screen-lead">Toca una celda para ir directo a esa semana y ejercicio.</div>';
+
+    html += '<div class="day-scroll">';
+    DATA.days.forEach(function(d){
+      var active = state.day===d.key;
+      html += '<div class="day-chip'+(active?' active':'')+'" data-action="pickDayProg" data-value="'+d.key+'">';
+      html += '<div class="dow">&nbsp;</div><div class="ses">'+d.title+'</div></div>';
+    });
+    html += '</div>';
+
+    var day = findDay(state.day);
+    html += '<div class="histwrap"><table class="histtable"><thead><tr><th>Ejercicio</th>';
+    for (var w=1; w<=8; w++){
+      html += '<th'+(w===state.week?' style="color:var(--accent)"':'')+'>S'+w+'</th>';
+    }
+    html += '</tr></thead><tbody>';
+
+    day.exercises.forEach(function(ex, exIdx){
+      html += '<tr><td>'+ex.nombre+'</td>';
+      for (var w2=1; w2<=8; w2++){
+        var v = getSet(state.day, exIdx, 0, w2);
+        var cell = (v.kg||v.reps) ? ((v.kg||'?')+'×'+(v.reps||'?')) : '—';
+        var hasCell = !!(v.kg||v.reps);
+        html += '<td class="'+(hasCell?'hascell':'')+(w2===state.week?' currentwk':'')+'" data-action="jumpTo" data-day="'+state.day+'" data-week="'+w2+'">'+cell+'</td>';
+      }
+      html += '</tr>';
+    });
+    html += '</tbody></table></div>';
+    html += '<div class="note-foot">Se muestra la 1ª serie de cada ejercicio como referencia rápida. Abre "Entrenar" para ver todas las series.</div>';
+
+    setScreenHTML(html);
+  }
+
+  // ---------- Week sheet ----------
+  function buildWeekGrid(){
+    var html = "";
+    for (var w=1; w<=8; w++){
+      var phase = phaseForWeek(w);
+      var active = w===state.week;
+      html += '<div class="week-cell'+(active?' active':'')+'" data-action="pickWeek" data-value="'+w+'" style="'+(active?'':'border-color:'+PHASE_COLOR[phase]+'44')+'">';
+      html += '<div class="n" style="color:'+(active?'var(--accent)':'var(--text)')+'">'+w+'</div>';
+      html += '<div class="p" style="color:'+PHASE_COLOR[phase]+'">'+phase.slice(0,4)+'</div>';
+      html += '</div>';
+    }
+    byId("weekGrid").innerHTML = html;
+  }
+  function openWeekSheet(){
+    buildWeekGrid();
+    byId("weekSheet").classList.add("open");
+    byId("weekOverlay").classList.add("open");
+  }
+  function closeWeekSheet(){
+    byId("weekSheet").classList.remove("open");
+    byId("weekOverlay").classList.remove("open");
+  }
+
+  // ---------- Backup ----------
+  function openBackupSheet(){
+    byId("backupSheet").classList.add("open");
+    byId("backupOverlay").classList.add("open");
+  }
+  function closeBackupSheet(){
+    byId("backupSheet").classList.remove("open");
+    byId("backupOverlay").classList.remove("open");
+  }
+  function exportBackup(){
+    var payload = { week: state.week, day: state.day, log: state.log, exportedAt: new Date().toISOString() };
+    var blob = new Blob([JSON.stringify(payload, null, 1)], { type: "application/json" });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = url;
+    a.download = "mesociclo_backup_"+new Date().toISOString().slice(0,10)+".json";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(function(){ URL.revokeObjectURL(url); }, 2000);
+    showToast("Backup descargado");
+  }
+  function importBackup(file){
+    var reader = new FileReader();
+    reader.onload = function(){
+      try{
+        var parsed = JSON.parse(reader.result);
+        if (parsed && parsed.log){
+          state.log = parsed.log;
+          if (parsed.week) state.week = parsed.week;
+          if (parsed.day) state.day = parsed.day;
+          render();
+          closeBackupSheet();
+          showToast("Backup importado");
+        } else {
+          showToast("Archivo no válido");
+        }
+      } catch(err){
+        showToast("No se pudo leer el archivo");
+      }
+    };
+    reader.readAsText(file);
+  }
+
+  // ---------- Events ----------
+  document.addEventListener("click", function(e){
+    var el = e.target.closest("[data-action]");
+    if (!el) return;
+    var action = el.dataset.action;
+
+    if (action==="pickDay" || action==="pickDayProg"){
+      state.day = el.dataset.value;
+      render();
+    } else if (action==="toggleDetail"){
+      var k = el.dataset.key;
+      state.exOpen[k] = !state.exOpen[k];
+      render();
+    } else if (action==="toggleHist"){
+      var k2 = el.dataset.key;
+      state.histOpen[k2] = !state.histOpen[k2];
+      render();
+    } else if (action==="openWeek"){
+      openWeekSheet();
+    } else if (action==="closeWeek"){
+      closeWeekSheet();
+    } else if (action==="pickWeek"){
+      state.week = Number(el.dataset.value);
+      closeWeekSheet();
+      render();
+    } else if (action==="jumpTo"){
+      state.day = el.dataset.day;
+      state.week = Number(el.dataset.week);
+      state.tab = "entrenar";
+      render();
+      byId("screen").scrollTop = 0;
+    } else if (action==="backup"){
+      openBackupSheet();
+    } else if (action==="closeBackup"){
+      closeBackupSheet();
+    } else if (action==="exportBackup"){
+      exportBackup();
+    } else if (action==="triggerImport"){
+      byId("importFile").click();
+    } else if (action==="toggleRung"){
+      el.classList.toggle("open");
+    } else if (action==="timer"){
+      startIfIdle(el.dataset.key, Number(el.dataset.seconds), el.id, el.dataset.stopid);
+    } else if (action==="addtime"){
+      addThirty(el.dataset.key, el.dataset.timerid, Number(el.dataset.base));
+    } else if (action==="stoptime"){
+      stopTimerManual(el.dataset.key, el.dataset.timerid, Number(el.dataset.base), el.id);
+    }
+  });
+
+  byId("importFile").addEventListener("change", function(e){
+    var file = e.target.files && e.target.files[0];
+    if (file) importBackup(file);
+  });
+
+  document.addEventListener("input", function(e){
+    var kgEl = e.target.closest('[data-action="setkg"]');
+    if (kgEl){
+      var k1 = kgEl.dataset.key;
+      state.log[k1] = state.log[k1] || { kg:"", reps:"" };
+      state.log[k1].kg = kgEl.value;
+      saveState();
+      return;
+    }
+    var repEl = e.target.closest('[data-action="setreps"]');
+    if (repEl){
+      var k2 = repEl.dataset.key;
+      state.log[k2] = state.log[k2] || { kg:"", reps:"" };
+      state.log[k2].reps = repEl.value;
+      saveState();
+      return;
+    }
+  });
+
+  // dismiss the on-screen keyboard once the person finishes typing a value (hits Enter/Done)
+  document.addEventListener("keydown", function(e){
+    if (e.key !== "Enter") return;
+    var el = e.target;
+    if (el.matches && (el.matches('[data-action="setkg"]') || el.matches('[data-action="setreps"]'))){
+      e.preventDefault();
+      el.blur();
+    }
+  });
+
+  // auto-start rest timer once the person finishes logging a set (leaves kg or reps field)
+  document.addEventListener("focusout", function(e){
+    var el = e.target;
+    if (!el.matches) return;
+    var isSetField = el.matches('[data-action="setkg"]') || el.matches('[data-action="setreps"]');
+    if (!isSetField) return;
+    var key = el.dataset.key;
+    if (timers[key]) return;
+    var val = state.log[key];
+    if (!val || (!val.kg && !val.reps)) return;
+    var timerEl = document.getElementById("timer-"+cssSafe(key));
+    if (!timerEl) return;
+    var seconds = Number(timerEl.dataset.seconds);
+    if (!seconds) return;
+    startTimer(key, seconds, timerEl.id, timerEl.dataset.stopid);
+  });
+
+  document.querySelectorAll(".tab-btn").forEach(function(btn){
+    btn.addEventListener("click", function(){ setTab(btn.dataset.tab); });
+  });
+
+  // init
+  loadState();
+  render();
+})();
+
+</script>
+</body>
+</html>
